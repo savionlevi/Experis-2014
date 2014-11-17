@@ -176,7 +176,20 @@ public class FirstEx {
 	
 	
 	//Question 14
-	
+	public static int fibonacci (int index)
+	{
+		int myFib[] = new int[15];
+		myFib[0]=1;
+		myFib[1]=1;
+		int res=0;
+		
+		for(int i=2;i<myFib.length;i++)
+		{
+			myFib[i]=myFib[i-2]+myFib[i-1];
+			System.out.println(myFib[i]);
+			
+		}
+		
 	public static void main(String[] args) {
 		int[] myArr={34,2,131,23,1,55,3};
 		printHello();
